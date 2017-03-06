@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CaldasTuristAPP</string>
+    <string name="titulo">Tourists in Caldas</string>
+    <string name="username">Usser</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="passwordConfirm">Repeat Password</string>
+    <string name="eMail">E-Mail</string>
+    <string name="cancel">Cancel</string>
+    <string name="miperfil">My Profile</string>
+    <string name="cerrarSesion">Sign fft</string>
+    <string name="bienvenida">Caldas TuristAPP</string>
+
+
+</resources>

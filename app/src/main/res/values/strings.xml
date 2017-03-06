@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CaldasTuristAPP</string>
+    <string name="titulo">Turistas en Caldas</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="passwordConfirm">Repetir Contraseña</string>
+    <string name="eMail">Correo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="miperfil">Mi Perfil</string>
+    <string name="cerrarSesion">Cerrar Sesion</string>
+    <string name="bienvenida">Caldas TuristAPP</string>
+</resources>
