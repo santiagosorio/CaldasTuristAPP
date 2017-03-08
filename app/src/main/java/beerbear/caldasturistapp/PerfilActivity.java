@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    TextView tUsername;
+    TextView tUsername, tMail;
     Intent intent;
+    String user, mail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +19,16 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         tUsername = (TextView) findViewById(R.id.tUsename);
+        tMail = (TextView) findViewById(R.id.tMail) ;
 
         Bundle extras=getIntent().getExtras();
         tUsername.setText(extras.getString("username"));
+        tMail.setText(extras.getString("mail"));
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.profmenu, menu);
         return true;
     }
 
@@ -34,14 +37,16 @@ public class PerfilActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id){
-            case R.id.mPerfil:
-            /*    intent = new Intent(MainActivity.this, PerfilActivity.class);
-                intent.putExtra("username",username);
-                intent.putExtra("correo",correo);
-                startActivity(intent);*/
+            case R.id.mPpal:
+
+                intent = new Intent(PerfilActivity.this, MainActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                finish();
                 break;
             case R.id.mLogOut:
-                Intent intent = new Intent(PerfilActivity.this, LoginActivity.class);
+                intent = new Intent(PerfilActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;

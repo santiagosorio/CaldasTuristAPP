@@ -47,14 +47,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(eUser.getText().toString().equals(user) && ePass.getText().toString().equals(pass)){
-                    Toast.makeText(LoginActivity.this,"Comparacion mela",Toast.LENGTH_SHORT).show();
+
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     intent.putExtra("username",user);
                     intent.putExtra("mail", mail);
                     startActivity(intent);
 
                 }else
-                    Toast.makeText(LoginActivity.this,"Else Inexplicable",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this,"Usuario o contraseña incorrecta",Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             user = data.getExtras().getString("username");
             pass =data.getExtras().getString("passwrd");
             mail= data.getExtras().getString("mail");
-            Toast.makeText(LoginActivity.this,"On result ok",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this,"Registro Satisfactorio",Toast.LENGTH_SHORT).show();
 
         }
         if (requestCode == 1234 && resultCode==RESULT_CANCELED){

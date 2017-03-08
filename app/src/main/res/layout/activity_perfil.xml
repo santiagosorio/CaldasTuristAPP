@@ -7,14 +7,42 @@
     android:orientation="vertical"
     tools:context="beerbear.caldasturistapp.PerfilActivity"
     >
+
+    <TextView
+        android:id="@+id/tPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/miperfil"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/senorx"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tUsename"
-        android:textSize="30sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/tUsuario"
+        android:textSize="30sp"
+        android:text="@string/username"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/tUsename"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tEmail"
+        android:textSize="30sp"
+        android:text="@string/eMail"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/tMail"/>
 
 </LinearLayout>
