@@ -31,6 +31,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="@string/password"
         android:id="@+id/ePass"
         android:gravity="center"
