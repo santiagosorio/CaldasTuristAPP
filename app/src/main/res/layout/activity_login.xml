@@ -4,6 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellowgreen"
     android:orientation="vertical"
     tools:context="beerbear.caldasturistapp.LoginActivity">
 
@@ -13,7 +14,7 @@
         android:text="@string/titulo"
         android:gravity="center"
         android:textSize="35sp"
-        android:textColor="@color/darkred"/>
+        android:textColor="@color/darkorange"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_weight="1"
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/username"
+        android:background="@color/darkseagreen"
         android:id="@+id/eUser"
         android:gravity="center"
         android:textSize="25sp"/>
@@ -31,8 +33,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="@string/password"
         android:id="@+id/ePass"
+        android:background="@color/darkseagreen"
         android:gravity="center"
         android:textSize="25sp"/>
     <Button
@@ -41,13 +45,16 @@
         android:text="@string/login"
         android:id="@+id/bLog"
         android:layout_gravity="center"/>
+
     <TextView
+        android:id="@+id/tRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registro"
-        android:id="@+id/tRegister"
-        android:textColor="@color/blue"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/regist"
+        android:textColor="@color/red" />
 
 
 </LinearLayout>

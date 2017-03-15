@@ -4,6 +4,7 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/yellowgreen"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context="beerbear.caldasturistapp.SplashActivity"

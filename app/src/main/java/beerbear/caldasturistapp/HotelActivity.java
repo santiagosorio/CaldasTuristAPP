@@ -1,5 +1,6 @@
 package beerbear.caldasturistapp;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,6 +21,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class HotelActivity extends AppCompatActivity {
+    Intent intent;
+    String mail, user;
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -40,6 +43,9 @@ public class HotelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel);
+        Bundle extras = getIntent().getExtras();
+        user = extras.getString("username");
+        mail = extras.getString("mail");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -53,15 +59,6 @@ public class HotelActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
     }
 
@@ -80,9 +77,35 @@ public class HotelActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.mPerfil:
+                intent = new Intent(HotelActivity.this,PerfilActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mHoteles:
+                break;
+            case R.id.mBares:
+                intent = new Intent(HotelActivity.this, BarActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mRest:
+                intent = new Intent(HotelActivity.this, RestauranteActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mLogOut:
+                intent = new Intent(HotelActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -116,7 +139,7 @@ public class HotelActivity extends AppCompatActivity {
                     HotelDosFragment tab2 = new HotelDosFragment();
                     return tab2;
                 case 2:
-                    HotelUnoFragment tab3 = new HotelUnoFragment();
+                    HotelTresFragment tab3 = new HotelTresFragment();
                     return tab3;
                 default: return null;
             }
@@ -134,9 +157,9 @@ public class HotelActivity extends AppCompatActivity {
                 case 0:
                     return getResources().getString(R.string.holtel1);
                 case 1:
-                    return "Plaza Garibaldi";
+                    return getResources().getString(R.string.holtel2);
                 case 2:
-                    return "SECTION 3";
+                    return getResources().getString(R.string.holtel3);
             }
             return null;
         }

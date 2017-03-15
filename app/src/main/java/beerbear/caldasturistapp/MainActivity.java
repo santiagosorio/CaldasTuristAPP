@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-       getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
 
@@ -32,7 +32,25 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id){
             case R.id.mPerfil:
-                intent =new Intent(MainActivity.this, PerfilActivity.class);
+                intent = new Intent(MainActivity.this,PerfilActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                break;
+            case R.id.mHoteles:
+                intent = new Intent(MainActivity.this, HotelActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                break;
+            case R.id.mBares:
+                intent = new Intent(MainActivity.this, BarActivity.class);
+                intent.putExtra("username",user);
+                intent.putExtra("mail",mail);
+                startActivity(intent);
+                break;
+            case R.id.mRest:
+                intent = new Intent(MainActivity.this, RestauranteActivity.class);
                 intent.putExtra("username",user);
                 intent.putExtra("mail",mail);
                 startActivity(intent);
@@ -42,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 break;
+
 
         }
         return true;

@@ -2,15 +2,45 @@
 <resources>
     <string name="app_name">CaldasTuristAPP</string>
     <string name="titulo">Tourists in Caldas</string>
-    <string name="username">Usser</string>
+    <string name="username">User</string>
     <string name="password">Password</string>
     <string name="login">Log In</string>
     <string name="passwordConfirm">Repeat Password</string>
     <string name="eMail">E-Mail</string>
     <string name="cancel">Cancel</string>
     <string name="miperfil">My Profile</string>
-    <string name="cerrarSesion">Sign fft</string>
+    <string name="cerrarSesion">Sign out</string>
     <string name="bienvenida">Caldas TuristAPP</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="holtel1">Caldas Square Hotel </string>
+    <string name="holtel2">Garibaldi Square Hotel</string>
+    <string name="title_activity_hotel">Hotel List</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="description1">El hotel de Caldas por Tradicion</string>
+    <string name="price1">$ 45.000</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_bares">BaresActivity</string>
+    <string name="hoteles">Hotels</string>
+    <string name="bares">Bar</string>
+    <string name="rest">Restaurants</string>
+    <string name="title_activity_bar">Bar List</string>
+    <string name="bar2">Springfield´s PUB </string>
+    <string name="title_activity_restaurante">Restaurant List</string>
+    <string name="bar1">Varsovia</string>
+    <string name="bar3">La Mulera inn</string>
+    <string name="holtel3">Central Hotel </string>
+    <string name="restaurante1">Aymará</string>
+    <string name="restaurante2">Donde Cheché</string>
+    <string name="restaurante3">Ajedréz Pizza</string>
+    <string name="ppal">Main</string>
+    <string name="registro">Register</string>
+    <string name="descrip">The Municipality of Caldas is located to the south of the city of Medellín, it is the gateway, as much towards the south of the Valley of Aburrá as to the southwest Antioqueño.</string>
+    <string name="regist">Sing in</string>
+    <string name="saludo">Meet the Municipality of Caldas</string>
 
 </resources>
