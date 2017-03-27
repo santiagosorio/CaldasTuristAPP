@@ -42,4 +42,5 @@
     <string name="descrip">El Municipio de Caldas está situado al sur de la ciudad de Medellín, es la puerta de entrada, tanto hacia el sur del Valle de Aburrá como al suroeste Antioqueño.</string>
     <string name="regist">Registro</string>
     <string name="saludo">Conozca el municipio de Caldas</string>
+    <string name="title_activity_hotel_d">HotelDActivity</string>
 </resources>
